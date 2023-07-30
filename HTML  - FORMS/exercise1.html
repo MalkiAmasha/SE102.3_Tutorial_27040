@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="process_registration.php" method="POST">
+        <label for="first-name">First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="first-name" name="first-name" required>
+        <br><br>
+
+        <label for="last-name">Last Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="last-name" name="last-name" required>
+        <br><br>
+
+        <label for="mobile-number">Mobile Number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" id="mobile-number" name="mobile-number" required>
+        <br><br>
+
+        <label>Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label>Favourite Music:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="pop" name="music" value="pop">
+        <label for="pop">Pop</label>
+        <input type="checkbox" id="rock" name="music" value="rock">
+        <label for="rock">Rock</label>
+        <input type="checkbox" id="other-music" name="music" value="other">
+        <label for="other-music">Other</label>
+        <br><br>
+
+        <label for="additional-details">Additional Details:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <textarea id="additional-details" name="additional-details" rows="4"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="terms-and-conditions" required>
+        <label for="terms-and-conditions">I agree to the terms and conditions</label>
+        <br><br>
+
+        <input type="submit" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Details Form</title>
+    <style>
+      th,
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Car Registration</h1>
+    <form>
+      <table>
+        
+        <tr>
+          <td><label for="ownerName">Owner Name</label></td>
+          <td>
+            <input
+              type="text"
+              id="ownerName"
+              name="ownerName"
+              placeholder="Owner Name"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number</label></td>
+          <td>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Phone Number"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="country">Country</label></td>
+          <td>
+            <select id="country" name="country" required>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="carModel">Car Model</label></td>
+          <td><input type="text" id="carModel" name="carModel" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="manufactureYear">Manufacture Year</label></td>
+          <td>
+            <select id="manufactureYear" name="manufactureYear" required>
+              <option value="" disabled selected>Select year</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label>Transmission</label></td>
+          <td>
+            <input
+              type="radio"
+              id="manual"
+              name="transmission"
+              value="Manual"
+              required
+            /><label for="manual">Manual</label>
+            <input
+              type="radio"
+              id="auto"
+              name="transmission"
+              value="Auto"
+              required
+            /><label for="auto">Auto</label><br />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="other">Other</label>
+          </td>
+          <td>
+            <textarea id="other" name="other" rows="4" cols="50"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" value="text" />
+            <label>I agree to the terms and conditions</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />&emsp;
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
