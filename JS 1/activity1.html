@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popup Message Box</title>
+  <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #popupButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #popupBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+  }
+  
+  .blueBar {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+.closeButton {
+    color: white;
+    background-color: red; /* Add this line to set the background color to red */
+    padding: 5px 10px; /* Adjust the padding for better appearance */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .warningLogo {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  #okButton {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  </style>
+</head>
+<body>
+  <button id="popupButton">Button</button>
+  <div id="popupBox" class="hidden">
+    <div class="blueBar">
+      <button class="closeButton" id="closeButton">X</button>
+      <p>Microsoft Internet Explorer</p>
+    </div>
+    <div class="content">
+      <div class="warningLogo">⚠️</div>
+      <p>This is an alert</p>
+    </div>
+    <button id="okButton">OK</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
