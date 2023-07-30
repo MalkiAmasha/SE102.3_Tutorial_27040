@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Table Border</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        border: 1px solid black; /* Initial border style */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jonny</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Elise</td>
+        <td>30</td>
+      </tr>
+    </table>
+
+    <button onclick="changeBorder()">Change Border</button>
+
+    <script>
+      function changeBorder() {
+        const table = document.querySelector("table");
+        table.style.border = "1px dashed blue"; // Change to desired border style
+      }
+    </script>
+  </body>
+</html>

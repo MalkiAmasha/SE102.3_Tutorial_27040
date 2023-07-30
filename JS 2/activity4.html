@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove Items from Dropdown List</title>
+  </head>
+  <body>
+    <label for="selectBox">Select a symble to remove:</label>
+    <select id="selectBox">
+      <option value="a">A</option>
+      <option value="b">B</option>
+      <option value="c">C</option>
+      <option value="d">D</option>
+      <option value="e">E</option>
+    </select>
+
+    <button onclick="removeItem()">Remove Item</button>
+
+    <script>
+      function removeItem() {
+        const selectBox = document.getElementById("selectBox");
+        const selectedValue = selectBox.value;
+
+        for (let i = 0; i < selectBox.options.length; i++) {
+          if (selectBox.options[i].value === selectedValue) {
+            selectBox.remove(i);
+            break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
